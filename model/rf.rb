@@ -3,6 +3,6 @@ module RF
   include Viejito
 
   def consumo
-    0
+    super
   end
 end
