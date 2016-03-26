@@ -1,7 +1,7 @@
 module HDMI
 
-  def consumo_por_entrada
-    consumo_tecnologico*0.2
+  def consumo
+    super*0.2 + super
   end
 
   def tasa_soportada

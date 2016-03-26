@@ -2,7 +2,7 @@ module RF
   include Analogico
   include Viejito
 
-  def consumo_por_entrada
+  def consumo
     0
   end
 end

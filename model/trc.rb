@@ -1,7 +1,7 @@
 module TRC
   include Analogico
 
-  def consumo_tecnologico
+  def consumo
        5*tamanio
   end
 

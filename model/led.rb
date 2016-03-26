@@ -1,7 +1,7 @@
 module LED
   include Digitable
 
-  def consumo_tecnologico
+  def consumo
     1*tamanio
   end
 

@@ -1,7 +1,7 @@
 module LCD
   include Digitable
 
-  def consumo_tecnologico
+  def consumo
     4*tamanio
   end
 

@@ -1,7 +1,7 @@
 module VGA
 
-  def consumo_por_entrada
-    0.001*definicion_maxima
+  def consumo
+    0.001*definicion_maxima + super
   end
 
   def tasa_soportada

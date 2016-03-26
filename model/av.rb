@@ -2,7 +2,7 @@ module AV
   include Analogico
   include Viejito
 
-  def consumo_por_entrada
-    consumo_tecnologico*0.1
+  def consumo
+    super*0.1 + super
   end
 end

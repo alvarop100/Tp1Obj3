@@ -7,10 +7,6 @@ class Pantalla
     @ppp=ppp
   end
 
-  def consumo
-    consumo_tecnologico+consumo_por_entrada
-  end
-
   def tasa_refresco
     [tasa_refresco_default,tasa_soportada_por_tecnologia].min
   end
