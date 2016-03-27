@@ -4,6 +4,4 @@ class Monitor< Pantalla
     120
   end
 
-
-
 end

@@ -3,6 +3,6 @@ module AV
   include Viejito
 
   def consumo
-    super*0.1 + super
+    super*1.1
   end
 end

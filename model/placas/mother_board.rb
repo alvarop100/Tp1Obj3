@@ -1,5 +1,6 @@
-module MotherBoard
-  #no estoy seguro si es necesario
+class MotherBoard
+  include Ineficiente
+
   def esParaVideoJuegos
     false
   end
