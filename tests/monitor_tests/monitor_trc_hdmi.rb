@@ -1,38 +1,38 @@
 require 'rspec'
 
-describe 'Tv led con hdmi' do
+describe 'Monitor led con hdmi' do
 
   before :each do
-    @tv = TV.new(50,120).extend(Led).extend(HDMI)
+    @monitor = Monitor.new(50,120).extend(Led).extend(HDMI)
   end
 
-  it 'Una tv sabe responder a consumo' do
+  it 'Un Monitor sabe responder a consumo' do
 
-    expect(@tv.respond_to? 'consumo').to be true
+    expect(@monitor.respond_to? 'consumo').to be true
   end
 
-  it 'Una tv sabe responder a tasa de refresco' do
+  it 'Un Monitor sabe responder a tasa de refresco' do
 
-    expect(@tv.respond_to? 'tasa_refresco').to be true
+    expect(@monitor.respond_to? 'tasa_refresco').to be true
   end
 
-  it 'Una tv sabe responder a definicion maxima' do
+  it 'Un Monitor sabe responder a definicion maxima' do
 
-    expect(@tv.respond_to? 'definicion_maxima').to be true
+    expect(@monitor.respond_to? 'definicion_maxima').to be true
   end
 
   it 'EL consumo debe ser 260 watts/h' do
 
-    expect(@tv.consumo).to eq 260
+    expect(@monitor.consumo).to eq 260
   end
 
   it 'La tasa de refresco debe ser 90' do
 
-    expect(@tv.tasa_refresco).to eq 90
+    expect(@monitor.tasa_refresco).to eq 90
   end
 
   it 'La definicion maxima debe ser 4242.640687119' do
 
-    expect(@tv.definicion_maxima).to eq 4242.640687119
+    expect(@monitor.definicion_maxima).to eq 4242.640687119
   end
 end
