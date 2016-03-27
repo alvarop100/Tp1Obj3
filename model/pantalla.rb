@@ -10,7 +10,7 @@ class Pantalla
   #aca para mi hay que revisarlo ehh,intentar hacer como consumo. todo super.
 
   def tasa_refresco
-    [tasa_refresco_default,tasa_soportada_por_tecnologia].min
+    [tasa_refresco_default,tasa_soportada].min
   end
 
   def esParaVideoJuegos
