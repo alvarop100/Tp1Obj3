@@ -1,0 +1,2 @@
+class Computadora_solido_placaNueva
+end

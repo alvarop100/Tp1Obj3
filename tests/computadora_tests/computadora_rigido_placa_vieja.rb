@@ -1,0 +1,2 @@
+class Computadora_rigido_placaVieja
+end
