@@ -1,4 +1,4 @@
-module LCD
+module Lsd
   include Digitable
 
   def consumo

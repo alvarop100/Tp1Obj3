@@ -7,7 +7,6 @@ class Pantalla
     @ppp=ppp
   end
 
-  #aca para mi hay que revisarlo ehh,intentar hacer como consumo. todo super.
 
   def tasa_refresco
     [tasa_refresco_default,tasa_soportada].min

@@ -1,7 +1,7 @@
 module HDMI
 
   def consumo
-    super*0.2 + super
+    super*1.2
   end
 
   def tasa_soportada
