@@ -21,18 +21,28 @@ describe 'Monitor led con hdmi' do
     expect(@monitor.respond_to? 'definicion_maxima').to be true
   end
 
+  it 'Un Monitor sabe responder si es apto para videojuegos' do
+
+    expect(@monitor.respond_to? 'esParaVideoJuegos').to be true
+  end
+
+  it 'EL monitor no debe ser apto para video juegos' do
+
+    expect(@monitor.isForVideoGames).to be true
+  end
+
   it 'EL consumo debe ser 204.242640687 watts/h' do
 
-    expect(@monitor.consumo).to eq 204.242640687
+    expect(@monitor.consumption).to eq 204.242640687
   end
 
   it 'La tasa de refresco debe ser 90' do
 
-    expect(@monitor.tasa_refresco).to eq 90
+    expect(@monitor.refresh_rate).to eq 90
   end
 
   it 'La definicion maxima debe ser 4242,640687119' do
 
-    expect(@monitor.definicion_maxima).to eq 4242,640687119
+    expect(@monitor.max_definition).to eq 4242, 640687119
   end
 end

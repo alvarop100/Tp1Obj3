@@ -21,18 +21,28 @@ describe 'Tv led con hdmi' do
     expect(@tv.respond_to? 'definicion_maxima').to be true
   end
 
+  it 'Una tv sabe responder si es apta para videojuegos' do
+
+    expect(@tv.respond_to? 'esParaVideoJuegos').to be true
+  end
+
+  it 'Una tv no debe ser apto para video juegos' do
+
+    expect(@tv.isForVideoGames).to be true
+  end
+
   it 'EL consumo debe ser 54.242640687 watts/h' do
 
-    expect(@tv.consumo).to eq 54.242640687
+    expect(@tv.consumption).to eq 54.242640687
   end
 
   it 'La tasa de refresco debe ser 90' do
 
-    expect(@tv.tasa_refresco).to eq 90
+    expect(@tv.refresh_rate).to eq 90
   end
 
   it 'La definicion maxima debe ser 4242,640687119' do
 
-    expect(@tv.definicion_maxima).to eq 4242,640687119
+    expect(@tv.max_definition).to eq 4242, 640687119
   end
 end
